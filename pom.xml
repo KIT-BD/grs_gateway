@@ -12,7 +12,7 @@
 	<artifactId>grsgateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>ROOT</name>
+	<name>grsgateway</name>
 	<description>GRS Gateway</description>
 	<url/>
 	<licenses>
@@ -68,6 +68,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>ROOT</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
