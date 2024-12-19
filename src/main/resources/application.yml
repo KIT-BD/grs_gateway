@@ -5,14 +5,8 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: client-service
-          uri: http://localhost:80
-          predicates:
-            - Path=/**
-          filters:
-            - StripPrefix=1
         - id: auth-service
-          uri: http://localhost:8181/grs_security
+          uri: http://localhost:8090/grs_security
           predicates:
             - Path=/grs_security/auth/**
         - id: grs-service
