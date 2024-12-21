@@ -6,11 +6,11 @@ spring:
     gateway:
       routes:
         - id: auth-service
-          uri: http://94.250.203.197:8181/grs_security
+          uri: http://localhost:8090/grs_security
           predicates:
             - Path=/grs_security/auth/**
         - id: grs-service
-          uri: http://94.250.203.197:8081/grs_server
+          uri: http://localhost:8081/grs_server
           predicates:
             - Path=/grs_server/**
       globalcors:
